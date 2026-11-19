@@ -26,7 +26,7 @@ const pop = (x, y) => {
   setTimeout(() => h.remove(), 1300);
 };
 const petFrom = (el) => () => { const r = el.getBoundingClientRect(); pop(r.left + r.width / 2, r.top); };
-["walker", "photo"].forEach((id) => { const el = document.getElementById(id); el.addEventListener("click", petFrom(el)); });
+["walker", "photo"].forEach((id) => { const el = document.getElementById(id); if (el) el.addEventListener("click", petFrom(el)); });
 
 // close boxes fold a window down to its title bar
 document.querySelectorAll(".win > .bar .close").forEach((b) => {
