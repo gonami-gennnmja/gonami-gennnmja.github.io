@@ -1,0 +1,25 @@
+---
+layout: default
+title: Notes
+description: Dev notes from building Isleday, tuttiday, iyyko and Ourhour.
+---
+<section class="win" aria-labelledby="notes-title">
+  <div class="bar"><button class="close" aria-label="Collapse window"></button><span class="title px" id="notes-title">NOTES.LOG</span></div>
+  <div class="body">
+    <p class="sub px" style="margin-top:0">Building apps alone, written down. <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+    {% if site.posts.size > 0 %}
+    <ul class="notes">
+      {% for post in site.posts %}
+      <li>
+        <time class="px" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+        <a class="px" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+        {% if post.tags.size > 0 %}<div class="tags">{% for t in post.tags %}<span class="tag px">{{ t }}</span>{% endfor %}</div>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="empty">Nothing here yet. Soon!</p>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if page.title %}<title>{{ page.title }} — gonami</title>{% else %}<title>gonami — apps for the little moments</title>{% endif %}
+{% assign desc = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+<meta name="description" content="{{ desc }}">
+<meta property="og:title" content="{{ page.title | default: 'PRESS START — gonami' }}">
+<meta property="og:description" content="{{ desc }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="{{ '/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/galmuri@2.40.2/dist/galmuri.css" rel="stylesheet">
+<link href="{{ '/css/site.css' | relative_url }}" rel="stylesheet">
+{% feed_meta %}
+</head>
+<body>
+
+<nav class="menubar px" aria-label="Main">
+  <a href="{{ '/' | relative_url }}" aria-label="Home" style="padding:0"><img src="{{ '/img/cat-head.svg' | relative_url }}" alt=""></a>
+  <a class="opt" href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/#apps' | relative_url }}">Apps</a>
+  <a href="{{ '/blog/' | relative_url }}">Notes</a>
+  <a href="{{ '/#about' | relative_url }}">About</a>
+  <span class="spacer"></span>
+  <span class="clock" id="clock" aria-hidden="true"></span>
+  <img class="heart" src="{{ '/img/heart.svg' | relative_url }}" alt="">
+</nav>
+
+<main id="top">
+{{ content }}
+</main>
+
+<button class="walker" id="walker" aria-label="Pet the walking cat"><img src="{{ '/img/cat.svg' | relative_url }}" alt=""></button>
+
+<script src="{{ '/js/site.js' | relative_url }}"></script>
+</body>
+</html>

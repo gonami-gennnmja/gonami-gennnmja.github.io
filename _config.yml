@@ -1,0 +1,26 @@
+title: gonami
+description: Apps for the little moments of your day. Isleday, tuttiday, iyyko and Ourhour, made by one solo dev and designer.
+url: https://gonami-gennnmja.github.io
+baseurl: ""
+author: gonami-gennnmja
+
+# a note lives at /blog/2026/11/19/its-file-name/
+permalink: /blog/:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+
+exclude:
+  - README.md
+  - WRITING.md
