@@ -1,8 +1,8 @@
-title: gonami
+title: pressmeow
 description: Apps for the little moments of your day. Isleday, tuttiday, iyyko and Ourhour, built on the side by a dev & designer who works with teams by day.
-url: https://gonami-gennnmja.github.io
+url: https://pressmeow.github.io
 baseurl: ""
-author: gonami-gennnmja
+author: pressmeow
 
 # a note lives at /blog/2026/11/19/its-file-name/
 permalink: /blog/:year/:month/:day/:title/

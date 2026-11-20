@@ -10,7 +10,7 @@
 _posts/2026-11-20-isleday-island-renderer.md
 ```
 
-이 글은 `https://gonami-gennnmja.github.io/blog/2026/11/20/isleday-island-renderer/` 주소로 열려요.
+이 글은 `https://pressmeow.github.io/blog/2026/11/20/isleday-island-renderer/` 주소로 열려요.
 
 GitHub 웹에서 바로 쓸 수도 있어요.
 리포 → `_posts` 폴더 → **Add file → Create new file** → 쓰고 **Commit changes**.

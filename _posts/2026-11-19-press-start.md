@@ -19,4 +19,4 @@ Expect short posts about design decisions, bugs that took too long, and things I
 const me = { role: "dev · designer", apps: 4, cat: "iyyko" };
 ```
 
-See you around. Come feed iyyko on [my GitHub](https://github.com/gonami-gennnmja) while you're here.
+See you around. Come feed iyyko on [my GitHub](https://github.com/pressmeow) while you're here.
