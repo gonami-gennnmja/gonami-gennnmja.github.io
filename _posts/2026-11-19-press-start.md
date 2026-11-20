@@ -16,7 +16,7 @@ Right now that means four of them:
 Expect short posts about design decisions, bugs that took too long, and things I wish I'd known earlier.
 
 ```js
-const me = { role: "solo dev · designer", apps: 4, cat: "iyyko" };
+const me = { role: "dev · designer", apps: 4, cat: "iyyko" };
 ```
 
 See you around. Come feed iyyko on [my GitHub](https://github.com/gonami-gennnmja) while you're here.
