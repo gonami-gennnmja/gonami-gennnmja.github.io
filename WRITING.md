@@ -42,3 +42,8 @@ lang: ko
 
 - 아직 공개하기 싫은 글은 머리말에 `published: false`를 넣으면 올라가지 않아요.
 - 새 글은 홈 화면 NOTES.LOG에 최근 3개, `/blog/`에 전부 나와요. RSS는 `/feed.xml`이에요.
+
+## 5. 댓글
+
+글마다 아래에 GitHub 계정으로 다는 댓글(giscus)이 붙어요. 댓글은 이 저장소의 Discussions에 쌓여요.
+어떤 글에서 댓글을 끄고 싶으면 머리말에 `comments: false`를 넣어요.

@@ -15,6 +15,27 @@ layout: default
     <div class="prose">
 {{ content }}
     </div>
+    {% if page.comments != false %}
+    <section class="comments" aria-labelledby="c-title">
+      <h2 class="px" id="c-title">Comments</h2>
+      <p class="soft" style="margin:0 0 12px;font-size:13px">Sign in with GitHub to leave one.</p>
+      <script src="https://giscus.app/client.js"
+        data-repo="gonami-gennnmja/gonami-gennnmja.github.io"
+        data-repo-id="R_kgDOInOMAQ"
+        data-category="General"
+        data-category-id="DIC_kwDOInOMAc4DLjny"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="noborder_light"
+        data-lang="{{ page.lang | default: 'en' }}"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async></script>
+    </section>
+    {% endif %}
     <footer>
       <a class="btn" href="{{ '/blog/' | relative_url }}">&larr; All notes</a>
       <span>

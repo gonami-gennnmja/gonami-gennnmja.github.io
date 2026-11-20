@@ -207,3 +207,13 @@ main { max-width: 1040px; margin: 0 auto; padding: 32px 16px 120px; }
   .notes p, .notes .tags { grid-column: 1; }
   .post .body { padding: 22px 18px 28px; }
 }
+
+/* ---------- 404: the bomb dialog ---------- */
+.bomb .inner { border-width: 3px; }
+.bomb-icon { width: 64px; height: 64px; animation: shake .25s steps(2) infinite; animation-play-state: paused; }
+.bomb:hover .bomb-icon { animation-play-state: running; }
+@keyframes shake { 50% { transform: translate(2px, -1px) rotate(-6deg); } }
+
+/* ---------- comments ---------- */
+.comments { margin-top: 36px; padding-top: 18px; border-top: 3px solid var(--ink); }
+.comments h2 { font-size: 16px; margin: 0 0 12px; }
